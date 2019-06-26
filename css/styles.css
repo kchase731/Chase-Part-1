@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600&display=swap');
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    background-image: url("../images/bulldog.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color: #F0ECEE;
+    background-position: top center;
+    background-size: cover;
+    
+}
+h1 {
+
+     font-weight: 400;
+    font-size: 1.8em;
+}
+h2 {
+
+     font-weight: 600;
+    font-size: 1.8em;
+}
+
+a.cta_button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0;
+    
+}
+p{
+    color: #88898B;
+    padding-top: 10px;
+}
+ul {
+    display: block;
+    list-style-type: none;
+}
+li {
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: flex-end;
+   
+    
+}
+.head {
+    order: 1;
+}
+.logo{
+    
+    margin-right: auto;
+    min-width: 200px;
+   
+}
+.menu{
+    margin-right: 5px;
+    margin-left: auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    
+}
+nav {
+    
+    text-decoration: none;
+    padding-left: 10px;
+}
+nav li {
+    display: inline;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+nav li a {
+    color: #88898B;
+    text-decoration: none;
+
+}
+nav li a:hover{
+    color: #FF4850;
+}
+.cta_button {
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #FF4850;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+.cta_button:hover {
+    justify-content: flex-end;
+    background-color: #CCC;
+    border: none;
+    border-radius: 15px;
+}
+.cta_button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.content {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.left_column{
+    flex: 1;
+    flex-basis: 40%;
+    
+    
+    
+}
+.right_column{
+    flex: 1;
+    flex-basis: 60%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+    header{
+        display: block;
+        margin: 0px;
+    }
+    
+    nav {
+        margin: 10px;
+        padding: 0px;
+    }
+   
+    .content{
+        display: block;
+        flex-direction: column;
+        padding-top: 40px;
+    
+    }
+    nav li {
+        display: block;
+        padding: 3px;
+        line-height: normal;
+    }
+    a.cta_button {
+        display: block
+    }
+}
