@@ -8,7 +8,12 @@
     
 }
 body {
-    background-image: none;
+    background-image: url("../images/bulldog.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color: #F0ECEE;
+    background-position: top center;
+    background-size: cover;
     
 }
 h1 {
@@ -48,7 +53,7 @@ li {
 }
 
 header{
-    display: block;
+    display: flex;
     padding-top: 10px;
     align-items: center;
     justify-content: flex-end;
@@ -77,10 +82,9 @@ nav {
     padding-left: 10px;
 }
 nav li {
-    display: block;
-    padding: 3px;
+    display: inline;
     text-decoration: none;
-    
+    padding-left: 10px;
 
 }
 nav li a {
@@ -99,7 +103,6 @@ nav li a:hover{
     border-radius: 15px;
     margin-left: 10px;
     text-align: center;
-    display: block;
 }
 .cta_button:hover {
     justify-content: flex-end;
@@ -116,52 +119,15 @@ nav li a:hover{
 
 .content {
     order: 2;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: -webkit-fill-available;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 20px;
     
 }
-
-
-@media only screen and (min-width: 768px) {
-  body {
-    background-image: url("../images/bulldog.jpg");
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-color: #F0ECEE;
-    background-position: top center;
-    background-size: cover;
-  }
-    header{
-        display: flex;
-        margin: 0px;
-    }
-    
-    nav {
-        margin: 10px;
-        padding: 0px;
-    }
-   
-    .content{
-        display: flex;
-        padding-top: 40px;
-    
-    }
-   nav li {
-        display: inline;
-        padding-left: 10px;   
-        line-height: normal;
-    }
-    
-    
-    a.cta_button {
-        display: inline;
-    }
-    .left_column{
+.left_column{
     flex: 1;
     flex-basis: 40%;
     
@@ -173,4 +139,33 @@ nav li a:hover{
     flex-basis: 60%;
 
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+    header{
+        display: block;
+        margin: 0px;
+    }
+    
+    nav {
+        margin: 10px;
+        padding: 0px;
+    }
+   
+    .content{
+        display: block;
+        flex-direction: column;
+        padding-top: 40px;
+    
+    }
+    nav li {
+        display: block;
+        padding: 3px;
+        line-height: normal;
+    }
+    a.cta_button {
+        display: block
+    }
 }
